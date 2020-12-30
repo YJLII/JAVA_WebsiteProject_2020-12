@@ -15,7 +15,8 @@ public class GetController {
     }
 
     @GetMapping("/getParameter")//Localhost:8008/api/getParameter
-    public String getParameter(@RequestParam String id, @RequestParam String password){
+    public String getParameter(@RequestParam String id, @RequestParam (name="password")String pwd){
+        String password="bbbb";
         System.out.println("id"+id);
         System.out.println("Password"+password);
 

@@ -10,16 +10,16 @@ import java.time.LocalDateTime;
 public class UserRepositoryTest extends DemoApplicationTests {
 
     @Autowired
-    private UserRepository userRepository ;
+    private UserRepositoryTest userRepository ;
 
     @Test
     public void create()
     {
         User user = new User();
 
-        user.setAccount("TestUser01");
-        user.setEmail("TestUser01@gmail.com");
-        user.setPhoneNumber("010-1111-1111");
+        user.setAccount("TestUser");
+        user.setEmail("TestUser@gmail.com");
+        user.setPhoneNumber("01011111111");
         user.setCreateAt(LocalDateTime.now());
         user.setCreatedBy("admin");
 
